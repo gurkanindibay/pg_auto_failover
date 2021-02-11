@@ -4,11 +4,12 @@ trigger: none
 resources:
   pipelines:
     - pipeline: samplejobs   # Name of the pipeline resource
-      source: samplejobs # Name of the pipeline referenced by the pipeline resource
+      source: pg_auto_failover.sample-jobs # Name of the pipeline referenced by the pipeline resource
       trigger:
         branches:
           - releases/*
           - main
+          - gindibay-azure-pipelines-test
 jobs:
   - job: generator
     steps:
