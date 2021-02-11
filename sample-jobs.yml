@@ -16,7 +16,5 @@ jobs:
   - job: C
     dependsOn:
       - A
-      - B
-    condition: succeeded('B')
     steps:
       - script: echo this will run when B runs and succeeds
