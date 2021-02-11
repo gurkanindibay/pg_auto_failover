@@ -1,6 +1,14 @@
 name: "Dynamic matrix test"
 pr: none
 trigger: none
+resources:
+  pipelines:
+    - pipeline: samplejobs   # Name of the pipeline resource
+      source: samplejobs # Name of the pipeline referenced by the pipeline resource
+      trigger:
+        branches:
+          - releases/*
+          - main
 jobs:
   - job: generator
     steps:

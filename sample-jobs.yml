@@ -1,4 +1,4 @@
-name: "Dependency multi job test"
+name: samplejobs
 pr: none
 trigger:
   - none
