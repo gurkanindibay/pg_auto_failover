@@ -23,7 +23,7 @@ jobs:
       vmImage: 'ubuntu-latest'
     container: gurkanindibay/pg-auto-failover-build:latest
     steps:
-      - script: pipenv install --system --deploy
+      - script: cd tests && pipenv install --system --deploy
       - script: citus_indent --check
       - script: ci/banned.sh
       - script: PATH=`pg_config --bindir`:$PATH make test
