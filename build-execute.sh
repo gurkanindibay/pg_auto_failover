@@ -1,7 +1,8 @@
- #!/bin/bash
+#!/bin/bash
 
+sudo iotop
 citus_indent --check
 black --check .
-ci/banned.h.sh
+/app/pg_auto_failover/ci/banned.h.sh
 make -j5 CFLAGS=-Werror
 PATH=`pg_config --bindir`:$PATH make test
