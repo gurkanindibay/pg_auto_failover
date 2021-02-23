@@ -1,5 +1,6 @@
 #!/bin/bash
-
+export TERM=linux
+export TERMINFO=/etc/terminfo
 sudo iotop
 citus_indent --check
 black --check .
