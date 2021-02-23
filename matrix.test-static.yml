@@ -25,6 +25,6 @@ jobs:
     steps:
       - script: pwd
       - script: ls -la
-      - script: cd
+      - script: cd ..
       - script: ls
       - script: pwd
