@@ -1,7 +1,5 @@
 #!/bin/bash
-export TERM=linux
-export TERMINFO=/etc/terminfo
-sudo iotop
+
 citus_indent --check
 black --check .
 /app/pg_auto_failover/ci/banned.h.sh
