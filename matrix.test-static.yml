@@ -3,7 +3,7 @@ pr: none
 trigger:
   - none
 jobs:
-  - job: Test
+#  - job: Test
 #    strategy:
 #      maxParallel: 2
 #      matrix:
@@ -16,8 +16,8 @@ jobs:
 #        Europe_Chrome:
 #          Location: Europe
 #          Browser: Chrome
-    steps:
-      - script: echo $(Location) # echos A or B depending on which leg is running
+#    steps:
+#      - script: echo $(Location) # echos A or B depending on which leg is running
   - job: Build
     pool:
       vmImage: 'ubuntu-latest'
