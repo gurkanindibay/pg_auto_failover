@@ -18,3 +18,9 @@ jobs:
           Browser: Chrome
     steps:
       - script: echo $(Location) # echos A or B depending on which leg is running
+  - job: Build
+    pool:
+      vmImage: 'ubuntu-latest'
+    container: gurkanindibay/pg-auto-failover-build:latest
+    steps:
+      - script: echo "Test"
