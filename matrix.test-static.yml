@@ -23,5 +23,8 @@ jobs:
       vmImage: 'ubuntu-latest'
     container: gurkanindibay/pg-auto-failover-build:latest
     steps:
+      - script: pwd
       - script: ls -la
+      - script: cd
+      - script: ls
       - script: pwd
