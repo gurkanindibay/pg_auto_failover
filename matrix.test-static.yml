@@ -24,3 +24,4 @@ jobs:
     container: gurkanindibay/pg-auto-failover-build:latest
     steps:
       - script: ls -la
+      - script: pwd
