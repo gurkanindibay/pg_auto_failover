@@ -25,5 +25,5 @@ jobs:
     steps:
       - script: cd tests && pipenv install --system --deploy
       - script: citus_indent --check
-      - script: ci/banned.sh
+      - script: ci/banned.h.sh
       - script: PATH=`pg_config --bindir`:$PATH make test
